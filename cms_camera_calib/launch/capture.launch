@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="cms_camera_calib" type="capture" name="capture" output="screen" />
+    <rosparam file="$(find cms_camera_calib)/config/params.yaml" command="load" />
+    <node name="capture_rviz" pkg="rviz" type="rviz" required="true" args="-d $(find cms_camera_calib)/config/capture.rviz"/> 
+</launch>

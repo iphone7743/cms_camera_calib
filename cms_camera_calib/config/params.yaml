@@ -1,0 +1,10 @@
+cms_camera_calib: 
+
+  # topics
+  img_left_topic: "/camera_array/left/image_raw"
+  img_right_topic: "/camera_array/right/image_raw"
+
+  # saved file path
+  saveFLAG: false  # DO NOT CHANGE
+  save_directory: "/home/cms-desktop/catkin_ws/src/cms_camera_calib/DATA/"  
+
